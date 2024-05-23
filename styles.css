@@ -1,0 +1,479 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f0f0;
+    color: #333;
+}
+header {
+    background: #007BFF;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 1.5px;
+}
+.menu-container {
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos */
+    justify-content: center; /* Centra horizontalmente los elementos */
+}
+
+.horizontal-list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.horizontal-list li {
+    margin-right: 20px; /* Espacio entre los elementos */
+    transition: font-size 0.3s ease; /* Transición suave del tamaño de la fuente al pasar el mouse */
+}
+
+.horizontal-list li:hover {
+    font-size: 1.1em; /* Aumenta ligeramente el tamaño de la fuente al pasar el mouse */
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px 0;
+    text-align: center; /* Centra el contenido horizontalmente */
+}
+
+.mv-container,
+.objectives-container,
+.admin-process,
+.foda-container,
+.forces-container,
+.factibilidad-container,
+.estrategias-container {
+    width: 100%; /* Ajusta el ancho al 100% */
+    margin-top: 50px; /* Añade un margen superior para separar los bloques */
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+h2 {
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #007BFF;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+li {
+    padding: 10px 0;
+    font-size: 1.1rem;
+}
+li:hover {
+    background: #e0e0e0;
+    transition: background 0.3s ease;
+}
+.circle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.circle {
+    border: 2px solid #007BFF;
+    border-radius: 50%;
+    padding: 20px;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #007BFF;
+}
+.circle:hover {
+    background: #007BFF;
+    color: #fff;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.social-icons img {
+    width: 40px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+.foda-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    width: 80%;
+    max-width: 1200px;
+    justify-content: center;
+}
+.foda-item {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+.foda-item h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #555;
+}
+.foda-item ul {
+    list-style: none;
+    padding-left: 0;
+}
+.foda-item ul li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+.foda-item ul li::before {
+    content: "•";
+    color: #0000;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.foda-icon {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    opacity: 0.1;
+}
+.center-icon {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center-icon img {
+    width: 100px;
+    height: 100px;
+    opacity: 0.5;
+}
+
+.mv-container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color:#007BFF;
+}
+.mv-section {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+.mv-item {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    color: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.mv-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.mv-item p {
+    font-size: 1rem;
+}
+.mv-item .mv-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+.vision-icon {
+    background-color: #29B6F6;
+    border-radius: 50%;
+    padding: 10px;
+}
+.mision-icon {
+    background-color: #66BB6A;
+    border-radius: 50%;
+    padding: 10px;
+}
+.valores-icon {
+    background-color: #FFA726;
+    border-radius: 50%;
+    padding: 10px;
+}
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.objectives-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 2rem;
+    margin-top: 3rem;
+}
+
+.objective {
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+}
+
+.icon {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: #fff;
+    margin: 0 auto 1rem;
+}
+
+.teal {
+    background-color: #008080;
+}
+
+.pink {
+    background-color: #FF69B4;
+}
+
+.light-green {
+    background-color: #90EE90;
+}
+
+.light-orange {
+    background-color: #FFA07A;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    color: #555;
+    line-height: 1.5;
+}
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.admin-process {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 2rem;
+    margin-top: 3rem;
+}
+
+.step {
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+}
+
+.icon {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: #555;
+    margin: 0 auto 1rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    color: #777;
+    line-height: 1.5;
+}
+
+.forces-container {
+    width: 80%;
+    max-width: 1200px;
+    margin-top: 3rem;
+    justify-content: center;
+}
+.forces-container h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-gap: 2rem;
+}
+
+.force {
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+}
+
+.force:nth-child(5) {
+    grid-column: span 2;
+}
+
+.iconn {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: #fff;
+    margin: 0 auto 1rem;
+}
+
+.teal {
+    background-color: #008080;
+}
+
+.pink {
+    background-color: #FF69B4;
+}
+
+.light-green {
+    background-color: #90EE90;
+}
+
+.light-orange {
+    background-color: #FFA07A;
+}
+.light-blue {
+    background-color: #ADD8E6;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    color: #555;
+    line-height: 1.5;
+}
+
+.factibilidad-container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 3rem auto;
+}
+
+.factibilidad-container h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.factibilidad-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 2rem;
+}
+
+.factibilidad-item {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.factibilidad-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.factibilidad-titulo {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.factibilidad-descripcion {
+    margin-top: 0.5rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+.estrategias-container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 3rem auto;
+}
+
+.estrategias-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+}
+
+.estrategia-item {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.estrategia-titulo {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.estrategia-descripcion {
+    margin-top: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Alinear los elementos benchmarking y outsourcing */
+.estrategia-item:nth-child(1),
+.estrategia-item:nth-child(2) {
+    margin: 0 auto;
+}
+
+/* Alinear el desarrollo organizacional debajo de los otros dos */
+.estrategia-item:nth-child(3) {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
